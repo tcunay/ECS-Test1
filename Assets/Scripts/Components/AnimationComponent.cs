@@ -19,12 +19,8 @@ namespace DefaultNamespace
 
         public void Animate(IMoveAction moveComponent, float deltaTime)
         {
-            float direction;
-            if (moveComponent.IsMoving)
-                direction = 1;
-            else
-                direction = -1;
-                
+            float direction = moveComponent.IsMoving ? 1 : -1;
+            
             SetScale(direction * deltaTime * AnimateSpeed);
         }
 
