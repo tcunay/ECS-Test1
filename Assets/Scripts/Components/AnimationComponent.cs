@@ -33,8 +33,5 @@ namespace DefaultNamespace
             
             Transform.localScale = currentScale;
         }
-
-
-
     }
 }
